@@ -1,0 +1,21 @@
+# Domyślnie zezwalaj wszystkim botom na dostęp do całej zawartości,
+# z wyjątkiem plików wymienionych w regułach Disallow.
+User-agent: *
+# Blokuj dostęp do plików konfiguracyjnych
+Disallow: /.htaccess
+Disallow: /*.log
+Disallow: /*.tmp
+Disallow: /*.bak
+
+# Crawl-delay dla botów agresywnych
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://Elastomery.impib.pl/sitemap.xml
